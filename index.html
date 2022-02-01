@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Frontend | Homework_5</title>
+	<link rel="stylesheet" type="text/css" href="style.css" >
+	<link rel="stylesheet" type="text/css" href="media-queries.css" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	
+	</head>
+<body>
+	<form class="form" id="form">
+		<h1>Вход</h1>
+		<div class="form__input-email" id="email-wrapper">
+			<label class="form__email-label" for="input-email">E-mail</label><br>
+			<div class="important" id="important_1">*</div>
+			<input class="form__email" type="email"  name="email" id="input-email" required placeholder="Введите e-mail">
+			<div class="error_email">Поля необходимые для заполнения</div>
+		</div>
+		<div class="form__input-password" id="password-wrapper">
+			<label class="form__password-label" for="input-password" >Пароль</label><br>
+			<div class="important" id="important_2">*</div>
+			<input class="form__password" type="password" name="password" id="input-password" required placeholder="Введите пароль">
+			<div class="error_password">Поля необходимые для заполнения</div>
+		</div>
+		<div class="form__checkbox-wrapper">
+			<div class="important" id="important_3">*</div>
+			<input class="form__checkbox" type="checkbox" name="agreement" id="input-checkbox" required>
+			<div class="form__checkbox-mark"></div>
+			<label class="form__checkbox-label" for="input-checkbox">Я согласен с <a class="rules" href="*">Правилами пользования приложением</a></label>
+		</div>
+		<div class="error_checkbox">Поля необходимые для заполнения</div>
+		<div class="alarm3"></div>
+		<!-- <input class="form__button" type="submit" value="Войти"> -->
+		<button class="form__button" >Регистрация</button>
+	</form>
+<input type="text" maxlength="10" required  pattern="[0-9]{7,9}" />
+<!-- <a href="./WhatsApp Image 2021-12-22 at 15.23.55.jpeg" download="true">download</a> -->
+	<script src="script.js"></script>
+</body>
+</html>
